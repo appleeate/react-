@@ -7,7 +7,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import "./index.css";
-import 'antd/dist/antd.css'
+import "antd/dist/antd.css";
 import App from "./App";
 import { mainRoutes } from "./routes";
 import * as serviceWorker from "./serviceWorker";
@@ -20,6 +20,7 @@ ReactDOM.render(
         //  return <Route key={route.path} path={route.path} component={route.component}/> 可以简写为下面的写法
         return <Route key={route.path} {...route} />;
       })}
+      <Redirect to="/admin" from="/" />
       <Redirect to="/404" />
     </Switch>
   </Router>,

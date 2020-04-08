@@ -33,7 +33,7 @@ export const adminRoutes = [
     icon: ShoppingCartOutlined,
   },
   {
-    path: "/admin/products/edit/:id",
+    path: "/admin/products/edit/:id?",
     component: Edit,
     isShow: false,
   },
